@@ -209,14 +209,14 @@
                 body header .navbar .container-fluid .navbar-collapse .navbar-nav .sub-menu .categorias .submenuList .submenuItems {
                   text-decoration: none;
                   color: black; }
-      body header .menuList {
+      body header nav .menuList {
         margin-left: 55px;
         height: 60px; }
-        body header .menuList .divMenuList {
+        body header nav .menuList .divMenuList {
           display: none; }
-        body header .menuList .divRightMenu .li1 .menuItemContacto {
+        body header nav .menuList .divRightMenu .li1 .menuItemContacto {
           display: none; }
-        body header .menuList .divRightMenu .li1 .carrito {
+        body header nav .menuList .divRightMenu .li1 .carrito {
           width: 45px; }
     body main {
       height: calc(100vh - 60px - 52px); }
@@ -232,25 +232,27 @@
           font-size: x-small; } }
 
 @media (max-width: 320px) {
-  .indexMain .divBoton {
+  .indexMain .divboton {
     width: 100px; }
-    .indexMain .divBoton .shopNow {
+    .indexMain .divboton .shopNow {
       font-size: small; }
   .indexMain .globalDiv .globalCarousel {
-    width: 190px;
+    width: 200px;
     margin-top: 150px; }
     .indexMain .globalDiv .globalCarousel .carouselContainer .carousel .carouselExample .carousel-inner .carousel-item .productImage {
       width: 150px; }
-  .mainPreguntasFrecuentes .globalPF .textContainer {
-    display: flex;
-    height: 100%;
-    padding-bottom: 20px; }
-    .mainPreguntasFrecuentes .globalPF .textContainer .pairContainer .pPreguntasFrecuentes {
+  .mainPreguntasFrecuentes {
+    overflow-y: scroll; }
+    .mainPreguntasFrecuentes .globalPF .textContainer {
+      display: flex;
+      height: 100%;
       padding-bottom: 20px; }
-    .mainPreguntasFrecuentes .globalPF .textContainer .pairContainer .pPreguntasFrecuentes1 {
-      padding-top: 0px; }
-    .mainPreguntasFrecuentes .globalPF .textContainer .pairContainer .pPreguntasFrecuentes3 {
-      padding-top: 0px; }
+      .mainPreguntasFrecuentes .globalPF .textContainer .pairContainer .pPreguntasFrecuentes {
+        padding-bottom: 20px; }
+      .mainPreguntasFrecuentes .globalPF .textContainer .pairContainer .pPreguntasFrecuentes1 {
+        padding-top: 0px; }
+      .mainPreguntasFrecuentes .globalPF .textContainer .pairContainer .pPreguntasFrecuentes3 {
+        padding-top: 0px; }
   .contactMain {
     overflow-y: scroll; }
     .contactMain .formulario form .contactanos {

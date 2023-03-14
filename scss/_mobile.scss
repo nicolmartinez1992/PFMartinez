@@ -1,48 +1,59 @@
 @media (max-width:320px) {
-    body{
+    body {
         background-position: 60% 70%;
-        header{
+
+        header {
             height: 60px;
-            .divimg{
+
+            .divimg {
                 display: flex;
                 justify-content: center;
                 width: 100%;
                 height: 60px;
                 position: absolute;
-                .img{
+
+                .img {
                     width: 130px;
                 }
             }
-            .navbar{
+
+            .navbar {
                 display: flex;
-                .container-fluid{
-                    .navbar-collapse{
+
+                .container-fluid {
+                    .navbar-collapse {
                         background-color: lightgrey;
                         padding: 5px;
                         margin-top: 12.5px;
                         border-bottom-left-radius: 10px;
                         border-bottom-right-radius: 10px;
-                        .navbar-nav{
-                            .nav-item{
+
+                        .navbar-nav {
+                            .nav-item {
                                 font-family: 'Montserrat', sans-serif;
                                 font-weight: bold;
-                                .nav-link{
+
+                                .nav-link {
                                     color: black;
                                     font-size: small;
                                 }
                             }
-                            .sub-menu{
+
+                            .sub-menu {
                                 font-family: 'Montserrat', sans-serif;
                                 color: black;
-                                .categorias{
+
+                                .categorias {
                                     font-size: small;
                                     text-decoration: none;
                                     color: black;
                                     font-weight: bold;
-                                    .submenuList{
+
+                                    .submenuList {
                                         list-style: disc;
                                         font-size: small;
-                                        .submenuItems{
+
+                                        .submenuItems {
                                             text-decoration: none;
                                             color: black;
                                         }
@@ -53,45 +64,58 @@
                     }
                 }
             }
-            .menuList{
-                margin-left: 55px;
-                height: 60px;
-                .divMenuList{
-                    display: none;
-                }
-                .divRightMenu{
-                    .li1{
-                        .menuItemContacto{
-                            display: none;
-                        }
+
+            nav {
+                .menuList {
+                    margin-left: 55px;
+                    height: 60px;
+
+                    .divMenuList {
+                        display: none;
                     }
-                    .li1{
-                        .carrito{
-                            width: 45px;
+
+                    .divRightMenu {
+                        .li1 {
+                            .menuItemContacto {
+                                display: none;
+                            }
+                        }
+
+                        .li1 {
+                            .carrito {
+                                width: 45px;
+                            }
                         }
                     }
                 }
             }
         }
-        main{
+
+        main {
             height: calc(100vh - 60px - 52px);
-            .wpp{
+
+            .wpp {
                 display: none;
-            } 
+            }
         }
-        footer{
+
+        footer {
             height: 52px;
-            .footerContainer{
-                .divFooter{
+
+            .footerContainer {
+                .divFooter {
                     height: 19px;
-                    .footerImage{
+
+                    .footerImage {
                         width: 17px;
                     }
-                    .footerSpan{
+
+                    .footerSpan {
                         font-size: x-small;
                     }
                 }
             }
         }
     }
+
 }

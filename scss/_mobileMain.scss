@@ -1,6 +1,6 @@
 @media (max-width:320px) {
 .indexMain{
-    .divBoton{
+    .divboton{
         width: 100px;
         .shopNow{
             font-size: small;
@@ -8,7 +8,7 @@
     }
     .globalDiv{
         .globalCarousel{
-            width: 190px;
+            width: 200px;
             margin-top: 150px;
             .carouselContainer{
                 .carousel{
@@ -28,6 +28,7 @@
 }
 
 .mainPreguntasFrecuentes{
+    overflow-y: scroll;
     .globalPF{
         .textContainer{
             display: flex;
