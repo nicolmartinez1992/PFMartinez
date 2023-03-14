@@ -1,0 +1,128 @@
+@media (max-width:320px) {
+.indexMain{
+    .divBoton{
+        width: 100px;
+        .shopNow{
+            font-size: small;
+        }
+    }
+    .globalDiv{
+        .globalCarousel{
+            width: 190px;
+            margin-top: 150px;
+            .carouselContainer{
+                .carousel{
+                    .carouselExample{
+                        .carousel-inner{
+                            .carousel-item{
+                                .productImage{
+                                    width: 150px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.mainPreguntasFrecuentes{
+    .globalPF{
+        .textContainer{
+            display: flex;
+            height: 100%;
+            padding-bottom: 20px;
+            .pairContainer{
+                .pPreguntasFrecuentes{
+                    padding-bottom: 20px;
+                }
+                .pPreguntasFrecuentes1{
+                    padding-top: 0px;
+                }
+            }
+            .pairContainer{
+                .pPreguntasFrecuentes3{
+                    padding-top: 0px;
+                }
+
+            }
+        }
+    }
+}
+
+.contactMain{
+    overflow-y: scroll;
+    .formulario{
+        form{
+            .contactanos{
+                text-align: center;
+                padding-left: 0px;
+                font-size: large;
+            }
+            .inputContainer{
+                display: flex;
+                flex-direction: row;
+                padding-left: 0px;
+                .label{
+                    font-size: small;
+                }
+                .inputName{
+                    height: 20px;
+                }
+            }
+            .inputContainer{
+                display: flex;
+                flex-direction: row;
+                padding-left: 0px;
+                .label{
+                    font-size: small;
+                }
+                .inputEmail{
+                    margin-left: 17.08px;
+                    height: 20px;
+                }
+            }
+            .inputContainer{
+                display: flex;
+                flex-direction: row;
+                padding-left: 0px;
+                .textArea{
+                    height: 150px;
+                    max-width: 500px;
+                    min-width: 200px;
+                }
+            }
+            .inputContainer{
+                display: flex;
+                flex-direction: row;
+                padding-left: 0px;
+                .inputSend{
+                    margin-left: 238.45px;
+                    font-size: small;
+                    margin-bottom: 20px;
+                }
+            }
+        }
+    }
+}
+
+.mainShopnow{
+    .h2Productos{
+        font-size: large;
+    }
+    .globalContainer{
+        .imagesContainer{
+            .individualContainer{
+                .imgProductos{
+                    width: 150px;
+                    height: 150px;
+                }
+                .spanProductos{
+                    font-size: small;
+                }
+            }
+        }
+    }
+}
+}

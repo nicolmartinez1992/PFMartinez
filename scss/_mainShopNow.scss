@@ -1,0 +1,54 @@
+.mainShopnow {
+    overflow-y: scroll;
+
+    .h2Productos {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: bold;
+        text-align: center;
+        padding-top: 20px;
+        font-size: x-large;
+    }
+
+    .globalContainer {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+
+        .imagesContainer {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            width: 60%;
+            height: 50%;
+            align-items: center;
+
+            .individualContainer {
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+                padding-bottom: 20px;
+                text-align: center;
+                .imgProductos {
+                    object-fit: fill;
+                    height: 200px;
+                    width: 200px;
+                    padding-bottom: 5px;
+                }
+
+                .spanProductos {
+                    font-family: 'Montserrat', sans-serif;
+                }
+            }
+        }
+    }
+
+    .wpp {
+        position: fixed;
+        padding: 20px;
+        bottom: 65px;
+        right: 0px;
+        width: 100px;
+    }
+}

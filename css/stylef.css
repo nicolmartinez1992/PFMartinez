@@ -1,321 +1,152 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    width: 100vw;
-    height: 100vh;
-    background-position: 60% 60%;
-}
-
-header {
-    background-color: black;
-    height: 76px;
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-}
-
-nav {
-    width: 100%;
-}
-
-.navbar {
-    display: none;
-}
-
-.divimg {
-    height: 76px;
-    display: flex;
-    align-items: center;
-    padding: 10px;
-}
-
-.divMenuList {
-    width: 100%;
-    height: 76px;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-}
-
-.menuList {
-    display: flex;
-    align-items: center;
-    height: 76px;
-    margin-left: 20px;
-    justify-content: space-around;
-}
-
-.li1 {
-    text-decoration: none;
-    display: inline-block;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: bold;
-    color: white;
-}
-
-.menuItem:hover {
-    background-color: white;
-    opacity: 0.8;
-    color: black;
-    padding: 8px;
-    border-radius: 1px;
-}
-
-.divRightMenu {
-    display: flex;
-    flex-direction: row;
-    height: 76px;
-    justify-content: flex-end;
-}
-
-.li2 {
-    display: flex;
-    align-items: center;
-}
-
-.menuItem {
-    text-decoration: none;
-    color: white;
-}
-
-main {
-    height: calc(100vh - 76px - 65px);
-    width: 100%;
-}
-
-footer {
-    height: 65px;
-    width: 100%;
-    background-color: black;
-    bottom: 0;
-    position: fixed;
-}
-
-.footerContainer {
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-}
-
-.divFooter {
-    display: flex;
-    flex-direction: row;
-    height: 100%;
-    color: white;
-    font-size: small;
-    font-family: 'Montserrat', sans-serif;
-    justify-content: center;
-    align-items: center;
-}
-
-/* Index */
-
 .indexMain {
-    overflow-y: scroll;
-}
-
-.divBoton {
+  overflow-y: scroll; }
+  .indexMain .divBoton {
     display: flex;
     align-items: center;
     justify-content: center;
     width: 100%;
-    height: 100%;
-}
-
-.shopNow {
-    color: white;
-    text-decoration: none;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: bold;
-    background-color: black;
-    padding: 15px;
-    border-radius: 1px;
-}
-
-.shopNow:hover {
-    opacity: 0.8;
-}
-
-.globalDiv {
+    height: 100%; }
+    .indexMain .divBoton .shopNow {
+      color: white;
+      text-decoration: none;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: bold;
+      background-color: black;
+      padding: 15px;
+      border-radius: 1px; }
+      .indexMain .divBoton .shopNow:hover {
+        opacity: 0.8; }
+  .indexMain .globalDiv {
     width: 100%;
     display: flex;
     justify-content: center;
-    margin-bottom: 70px;
-}
+    margin-bottom: 70px; }
+    .indexMain .globalDiv .globalCarousel {
+      flex-direction: column;
+      padding: 20px;
+      width: 700px;
+      background-color: black;
+      display: flex;
+      justify-content: center;
+      text-align: center;
+      opacity: 0.8;
+      border-radius: 10px; }
+      .indexMain .globalDiv .globalCarousel:hover {
+        opacity: 1; }
+      .indexMain .globalDiv .globalCarousel .carouselSpan {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: bold;
+        color: white;
+        padding-bottom: 15px; }
+      .indexMain .globalDiv .globalCarousel .carouselContainer {
+        display: flex;
+        justify-content: center; }
+        .indexMain .globalDiv .globalCarousel .carouselContainer .carousel {
+          width: 200px; }
+    .indexMain .globalDiv .wpp {
+      position: fixed;
+      padding: 20px;
+      bottom: 65px;
+      right: 0px;
+      width: 100px; }
 
-.globalCarousel {
-    flex-direction: column;
-    padding: 20px;
-    width: 700px;
-    background-color: black;
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    opacity: 0.8;
-    border-radius: 10px;
-}
-
-.globalCarousel:hover {
-    opacity: 1;
-}
-
-.carouselSpan {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: bold;
-    color: white;
-    padding-bottom: 15px;
-}
-
-.productoImage {
-    width: 200px;
-}
-
-.carouselContainer {
-    display: flex;
-    justify-content: center;
-}
-
-.carousel {
-    width: 200px;
-}
-
-.wpp {
+.contactMain {
+  overflow-y: scroll; }
+  .contactMain .formulario form {
+    padding-bottom: 30px; }
+    .contactMain .formulario form .contactanos {
+      color: black;
+      font-family: 'Montserrat', sans-serif;
+      font-size: x-large;
+      font-weight: bold;
+      padding-left: 40px;
+      padding-top: 20px;
+      padding-bottom: 20px; }
+    .contactMain .formulario form .inputContainer {
+      display: flex;
+      flex-direction: row;
+      width: 50%;
+      padding-left: 20px;
+      font-family: 'Montserrat', sans-serif; }
+      .contactMain .formulario form .inputContainer .label {
+        display: flex;
+        justify-self: flex-start;
+        padding-left: 20px;
+        padding-right: 20px; }
+      .contactMain .formulario form .inputContainer .input {
+        margin-bottom: 20px; }
+    .contactMain .formulario form .inputContainer .inputEmail {
+      margin-left: 21.02px; }
+    .contactMain .formulario form .inputContainer .inputSend {
+      margin-left: 326.23px;
+      background-color: black;
+      color: white;
+      font-family: 'Montserrat', sans-serif;
+      padding: 5px;
+      border-radius: 5px;
+      margin-bottom: 20px; }
+  .contactMain .wpp {
     position: fixed;
     padding: 20px;
     bottom: 65px;
     right: 0px;
-    width: 100px;
-}
-
-/* Contacto */
-
-.contactMain {
-    overflow-y: scroll;
-}
-
-.contactanos {
-    color: black;
-    font-family: 'Montserrat', sans-serif;
-    font-size: x-large;
-    font-weight: bold;
-    padding-left: 40px;
-    padding-top: 20px;
-    padding-bottom: 20px;
-}
-
-.inputContainer {
-    display: flex;
-    flex-direction: row;
-    width: 50%;
-    padding-left: 20px;
-    font-family: 'Montserrat', sans-serif;
-}
-
-.input {
-    margin-bottom: 20px;
-}
-
-.label {
-    display: flex;
-    justify-self: flex-start;
-    padding-left: 20px;
-    padding-right: 20px;
-}
-
-.inputEmail {
-    margin-left: 21.02px;
-}
-
-.inputSend {
-    margin-left: 326.23px;
-    background-color: black;
-    color: white;
-    font-family: 'Montserrat', sans-serif;
-    padding: 5px;
-    border-radius: 5px;
-    margin-bottom: 20px;
-}
-
-/* Shop Now */
+    width: 100px; }
 
 .mainShopnow {
-    overflow-y: scroll;
-}
-
-.h2Productos {
+  overflow-y: scroll; }
+  .mainShopnow .h2Productos {
     font-family: 'Montserrat', sans-serif;
     font-weight: bold;
     text-align: center;
     padding-top: 20px;
-    font-size: x-large;
-}
-
-.globalContainer {
+    font-size: x-large; }
+  .mainShopnow .globalContainer {
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 20px; }
+    .mainShopnow .globalContainer .imagesContainer {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      width: 60%;
+      height: 50%;
+      align-items: center; }
+      .mainShopnow .globalContainer .imagesContainer .individualContainer {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        padding-bottom: 20px;
+        text-align: center; }
+        .mainShopnow .globalContainer .imagesContainer .individualContainer .imgProductos {
+          object-fit: fill;
+          height: 200px;
+          width: 200px;
+          padding-bottom: 5px; }
+        .mainShopnow .globalContainer .imagesContainer .individualContainer .spanProductos {
+          font-family: 'Montserrat', sans-serif; }
+  .mainShopnow .wpp {
+    position: fixed;
     padding: 20px;
-}
+    bottom: 65px;
+    right: 0px;
+    width: 100px; }
 
-.imagesContainer {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    width: 60%;
-    height: 50%;
-    align-items: center;
-}
-
-.imgProductos {
-    object-fit: fill;
-    height: 200px;
-    width: 200px;
-    padding-bottom: 5px;
-}
-
-.individualContainer {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    padding-bottom: 20px;
+.mainPreguntasFrecuentes .globalPF {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column; }
+  .mainPreguntasFrecuentes .globalPF .titleContainer {
     text-align: center;
-}
-
-.spanProductos {
-    font-family: 'Montserrat', sans-serif;
-}
-
-/* Preguntas Frecuentes */
-
-.mainPreguntasFrecuentes{
-    overflow-y: scroll;
-}
-
-.globalPF {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-}
-
-.titleContainer {
-    text-align: center;
-    padding: 20px 20px 0px 20px;
-}
-
-.preguntasFrecuentes {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: bold;
-    font-size: x-large;
-}
-
-.textContainer {
+    padding: 20px 20px 0px 20px; }
+    .mainPreguntasFrecuentes .globalPF .titleContainer .preguntasFrecuentes {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: bold;
+      font-size: x-large; }
+  .mainPreguntasFrecuentes .globalPF .textContainer {
     display: flex;
     padding: 10px 20px 20px 20px;
     flex-direction: row;
@@ -323,206 +154,233 @@ footer {
     width: 100%;
     justify-content: space-around;
     margin-top: 30px;
-    flex-wrap: wrap;
-}
+    flex-wrap: wrap; }
+    .mainPreguntasFrecuentes .globalPF .textContainer .pairContainer .pPreguntasFrecuentes {
+      margin: 20px 10px 0 10px;
+      font-size: medium;
+      text-align: justify;
+      color: #626161; }
 
-.pPreguntasFrecuentes {
-    margin: 20px 10px 0 10px;
-    font-size: medium;
-    text-align: justify;
-    color: rgb(98, 97, 97);
-}
+.mainPreguntasFrecuentes .wpp {
+  position: fixed;
+  padding: 20px;
+  bottom: 65px;
+  right: 0px;
+  width: 100px; }
 
-.pPreguntasFrecuentes1{
-    padding-top: 24px;
-}
-
-.pPreguntasFrecuentes3{
-    padding-top: 24px;
-}
-
-@media (max-width:320px) {
-
-    /* General */
-
-    body {
-        background-position: 60% 70%;
-    }
-
-    header {
-        height: 60px;
-    }
-
-    .divimg {
+@media (max-width: 320px) {
+  body {
+    background-position: 60% 70%; }
+    body header {
+      height: 60px; }
+      body header .divimg {
         display: flex;
         justify-content: center;
         width: 100%;
         height: 60px;
-        position: absolute;
-    }
-
-    .img {
-        width: 130px;
-    }
-
-    .navbar {
-        display: flex;
-    }
-
-    .nav-item{
-        font-family: 'Montserrat', sans-serif;
-    }
-
-    .navbar-collapse{
-    background-color: lightgrey;
-    padding: 5px;
-    margin-top: 12.5px;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
-    }
-    .menuList {
+        position: absolute; }
+        body header .divimg .img {
+          width: 130px; }
+      body header .navbar {
+        display: flex; }
+        body header .navbar .container-fluid .navbar-collapse {
+          background-color: lightgrey;
+          padding: 5px;
+          margin-top: 12.5px;
+          border-bottom-left-radius: 10px;
+          border-bottom-right-radius: 10px; }
+          body header .navbar .container-fluid .navbar-collapse .navbar-nav .nav-item {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: bold; }
+            body header .navbar .container-fluid .navbar-collapse .navbar-nav .nav-item .nav-link {
+              color: black;
+              font-size: small; }
+          body header .navbar .container-fluid .navbar-collapse .navbar-nav .sub-menu {
+            font-family: 'Montserrat', sans-serif;
+            color: black; }
+            body header .navbar .container-fluid .navbar-collapse .navbar-nav .sub-menu .categorias {
+              font-size: small;
+              text-decoration: none;
+              color: black;
+              font-weight: bold; }
+              body header .navbar .container-fluid .navbar-collapse .navbar-nav .sub-menu .categorias .submenuList {
+                list-style: disc;
+                font-size: small; }
+                body header .navbar .container-fluid .navbar-collapse .navbar-nav .sub-menu .categorias .submenuList .submenuItems {
+                  text-decoration: none;
+                  color: black; }
+      body header .menuList {
         margin-left: 55px;
-        height: 60px;
-    }
+        height: 60px; }
+        body header .menuList .divMenuList {
+          display: none; }
+        body header .menuList .divRightMenu .li1 .menuItemContacto {
+          display: none; }
+        body header .menuList .divRightMenu .li1 .carrito {
+          width: 45px; }
+    body main {
+      height: calc(100vh - 60px - 52px); }
+      body main .wpp {
+        display: none; }
+    body footer {
+      height: 52px; }
+      body footer .footerContainer .divFooter {
+        height: 19px; }
+        body footer .footerContainer .divFooter .footerImage {
+          width: 17px; }
+        body footer .footerContainer .divFooter .footerSpan {
+          font-size: x-small; } }
 
-    .divMenuList {
-        display: none;
-    }
-
-    .menuItemContacto {
-        display: none;
-    }
-
-    .carrito {
-        width: 45px;
-    }
-
-    main {
-        height: calc(100vh - 60px - 52px);
-    }
-
-    .wpp {
-        display: none;
-    }
-
-    .divFooter {
-        height: 19px;
-    }
-
-    .footerSpan {
-        font-size: x-small;
-    }
-
-    .footerImage {
-        width: 17px;
-    }
-
-    footer {
-        height: 52px;
-    }
-
-    /* Index */
-
-    .globalCarousel {
-        width: 190px;
-        margin-top: 150px;
-    }
-
-    .productImage {
-        width: 150px;
-    }
-
-    .divboton {
-        width: 100px;
-    }
-
-    .shopNow {
-        font-size: small;
-    }
-
-    /* Preguntas Frecuentes */
-
-    .textContainer {
-        display: flex;
-        height: 100%;
-        padding-bottom: 20px;
-    }
-
-    .textContainer2 {
-        margin-bottom: 50px;
-    }
-
-    .pPreguntasFrecuentes {
-        padding-bottom: 20px;
-    }
-
-    .pPreguntasFrecuentes1{
-        padding-top: 0px;
-    }
-
-    .pPreguntasFrecuentes3{
-        padding-top: 0px;
-    }
-    
-    /* Contacto */
-
-    .contactMain {
-        overflow-y: scroll;
-    }
-
-    .contactanos {
-        text-align: center;
-        padding-left: 0px;
-        font-size: large;
-    }
-
-    .inputContainer {
-        display: flex;
-        flex-direction: row;
-        padding-left: 0px;
-    }
-
-    .label {
-        font-size: small;
-    }
-
-    .inputName {
-        height: 20px;
-    }
-
-    .inputEmail {
+@media (max-width: 320px) {
+  .indexMain .divBoton {
+    width: 100px; }
+    .indexMain .divBoton .shopNow {
+      font-size: small; }
+  .indexMain .globalDiv .globalCarousel {
+    width: 190px;
+    margin-top: 150px; }
+    .indexMain .globalDiv .globalCarousel .carouselContainer .carousel .carouselExample .carousel-inner .carousel-item .productImage {
+      width: 150px; }
+  .mainPreguntasFrecuentes .globalPF .textContainer {
+    display: flex;
+    height: 100%;
+    padding-bottom: 20px; }
+    .mainPreguntasFrecuentes .globalPF .textContainer .pairContainer .pPreguntasFrecuentes {
+      padding-bottom: 20px; }
+    .mainPreguntasFrecuentes .globalPF .textContainer .pairContainer .pPreguntasFrecuentes1 {
+      padding-top: 0px; }
+    .mainPreguntasFrecuentes .globalPF .textContainer .pairContainer .pPreguntasFrecuentes3 {
+      padding-top: 0px; }
+  .contactMain {
+    overflow-y: scroll; }
+    .contactMain .formulario form .contactanos {
+      text-align: center;
+      padding-left: 0px;
+      font-size: large; }
+    .contactMain .formulario form .inputContainer {
+      display: flex;
+      flex-direction: row;
+      padding-left: 0px; }
+      .contactMain .formulario form .inputContainer .label {
+        font-size: small; }
+      .contactMain .formulario form .inputContainer .inputName {
+        height: 20px; }
+    .contactMain .formulario form .inputContainer {
+      display: flex;
+      flex-direction: row;
+      padding-left: 0px; }
+      .contactMain .formulario form .inputContainer .label {
+        font-size: small; }
+      .contactMain .formulario form .inputContainer .inputEmail {
         margin-left: 17.08px;
-        height: 20px;
-    }
-
-    .inputSend {
-        margin-left: 238.45px;
-        font-size: small;
-        margin-bottom: 20px;
-    }
-
-    .textArea {
+        height: 20px; }
+    .contactMain .formulario form .inputContainer {
+      display: flex;
+      flex-direction: row;
+      padding-left: 0px; }
+      .contactMain .formulario form .inputContainer .textArea {
         height: 150px;
         max-width: 500px;
-        min-width: 200px;
-    }
-
-    .wppContacto {
-        display: none;
-    }
-
-    /* Shop Now */
-
-    .h2Productos {
-        font-size: large;
-    }
-
-    .imgProductos {
-        width: 150px;
-        height: 150px;
-    }
-
-    .spanProductos {
+        min-width: 200px; }
+    .contactMain .formulario form .inputContainer {
+      display: flex;
+      flex-direction: row;
+      padding-left: 0px; }
+      .contactMain .formulario form .inputContainer .inputSend {
+        margin-left: 238.45px;
         font-size: small;
-    }
-}
+        margin-bottom: 20px; }
+  .mainShopnow .h2Productos {
+    font-size: large; }
+  .mainShopnow .globalContainer .imagesContainer .individualContainer .imgProductos {
+    width: 150px;
+    height: 150px; }
+  .mainShopnow .globalContainer .imagesContainer .individualContainer .spanProductos {
+    font-size: small; } }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background-position: 60% 60%; }
+  body header {
+    background-color: black;
+    height: 76px;
+    width: 100%;
+    display: flex;
+    flex-direction: row; }
+    body header .divimg {
+      height: 76px;
+      display: flex;
+      align-items: center;
+      padding: 10px; }
+    body header .navbar {
+      display: none; }
+    body header nav {
+      width: 100%; }
+      body header nav .menuList {
+        display: flex;
+        align-items: center;
+        height: 76px;
+        margin-left: 20px;
+        justify-content: space-around; }
+        body header nav .menuList .divMenuList {
+          width: 100%;
+          height: 76px;
+          display: flex;
+          align-items: center;
+          justify-content: space-around; }
+          body header nav .menuList .divMenuList .li1 {
+            text-decoration: none;
+            display: inline-block;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: bold;
+            color: white; }
+            body header nav .menuList .divMenuList .li1 .menuItem {
+              text-decoration: none;
+              color: white; }
+              body header nav .menuList .divMenuList .li1 .menuItem:hover {
+                background-color: white;
+                opacity: 0.8;
+                color: black;
+                padding: 8px;
+                border-radius: 1px; }
+        body header nav .menuList .divRightMenu {
+          display: flex;
+          flex-direction: row;
+          height: 76px;
+          justify-content: flex-end; }
+          body header nav .menuList .divRightMenu .li1 {
+            text-decoration: none;
+            display: inline-block;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: bold;
+            color: white; }
+          body header nav .menuList .divRightMenu .li2 {
+            display: flex;
+            align-items: center; }
+  body main {
+    height: calc(100vh - 60px - 52px); }
+  body footer {
+    height: 65px;
+    width: 100%;
+    background-color: black;
+    bottom: 0;
+    position: fixed; }
+    body footer .footerContainer {
+      display: flex;
+      flex-direction: column;
+      height: 100%; }
+      body footer .footerContainer .divFooter {
+        display: flex;
+        flex-direction: row;
+        height: 100%;
+        color: white;
+        font-size: small;
+        font-family: 'Montserrat', sans-serif;
+        justify-content: center;
+        align-items: center; }

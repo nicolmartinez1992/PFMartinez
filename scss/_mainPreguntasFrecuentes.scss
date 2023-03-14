@@ -1,0 +1,44 @@
+.mainPreguntasFrecuentes {
+    .globalPF {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        .titleContainer{
+            text-align: center;
+            padding: 20px 20px 0px 20px;
+            .preguntasFrecuentes{
+                font-family: 'Montserrat', sans-serif;
+                font-weight: bold;
+                font-size: x-large; 
+            }
+        }
+        .textContainer{
+            display: flex;
+            padding: 10px 20px 20px 20px;
+            flex-direction: row;
+            font-family: 'Montserrat', sans-serif;
+            width: 100%;
+            justify-content: space-around;
+            margin-top: 30px;
+            flex-wrap: wrap;
+            .pairContainer{
+                .pPreguntasFrecuentes{
+                    margin: 20px 10px 0 10px;
+                    font-size: medium;
+                    text-align: justify;
+                    color: rgb(98, 97, 97);
+                }
+
+            }
+        }
+    }
+    .wpp{
+        position: fixed;
+        padding: 20px;
+        bottom: 65px;
+        right: 0px;
+        width: 100px;
+    }
+}
