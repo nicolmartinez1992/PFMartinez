@@ -1,4 +1,4 @@
-@media (max-width:320px) {
+@media (max-width:768px) {
     body {
         background-position: 60% 70%;
 
@@ -19,6 +19,7 @@
 
             .navbar {
                 display: flex;
+                z-index: 10;
 
                 .container-fluid {
                     .navbar-collapse {
