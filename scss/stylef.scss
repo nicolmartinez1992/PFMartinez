@@ -2,8 +2,6 @@
 @import "mainContacto";
 @import "mainShopNow";
 @import "mainPreguntasFrecuentes";
-@import "mobile";
-@import "mobileMain";
 
 *{
     margin: 0;
@@ -34,7 +32,7 @@ body{
             display: none;
         }
 
-        nav{
+        .navMenuList{
             width: 100%;
             .menuList{
                 display: flex;
@@ -127,5 +125,7 @@ body{
     }
 }
 
+@import "mobile";
+@import "mobileMain";
 
 

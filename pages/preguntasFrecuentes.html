@@ -5,9 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <!-- Bootstrap -->
-     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
-     integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/stylef.css">
     <title>Tractof</title>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;500&display=swap" rel="stylesheet">
@@ -17,33 +17,50 @@
 <body>
     <header>
         <div class="divimg">
-            <img class="img" src="../assets/imagenes/logo-tracto.png" width="150px" alt="Logo tracto">
+            <img class="img" src="../assets/imagenes/logo-tracto.png" width="150px" alt="Logo">
         </div>
         <nav class="navbar">
             <div class="container-fluid">
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon navbar-dark"></span>
-              </button>
-              <a class="navbar-brand" href="#"></a>
-              <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                  <li class="nav-item">
-                    <a class="nav-link" aria-current="page" href="../index.html">Inicio</a>
-                  </li>
-                  <li class="nav-item">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon navbar-dark"></span>
+                </button>
+                <a class="navbar-brand" href="#"></a>
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="../index.html">Inicio</a>
+                        </li>
+                        <li class="sub-menu">
+                            <a class="categorias">Categorias<div class="fa fa-caret-down right"></div>
+                            </a>
+                            <ul class="ulCategorias">
+                                <li class="submenuList">
+                                    <a class="submenuItems" href='#'>Pantalones/ Shorts</a>
+                                </li>
+                                <li class="submenuList">
+                                    <a class="submenuItems" href='#'>Remeras/ Tops</a>
+                                </li>
+                                <li class="submenuList">
+                                    <a class="submenuItems" href='#'>Buzos</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <!-- <li class="nav-item">
                     <a class="nav-link" href="#">Categorias</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="./preguntasFrecuentes.html">Preguntas Frecuentes</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="./contacto.html">Contacto</a>
-                  </li>
-                </ul>
-              </div>
+                  </li> -->
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/preguntasFrecuentes.html">Preguntas Frecuentes</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-          </nav>
-        <nav>
+        </nav>
+        <nav class="navMenuList">
             <ul class="menuList">
                 <div class="divMenuList">
                     <li class="li1 liPrincipalMenu">
@@ -78,18 +95,22 @@
             <div class="textContainer textContainer1 row">
                 <div class="pairContainer col-12 col-md-4 mb-4 text-center">
                     <span class="spanPF">¿Las prendas tienen cambio?</span>
-                    <p class="pPreguntasFrecuentes pPreguntasFrecuentes1">Las prendas tienen hasta 15 dias habiles para el cambio siempre y cuando se encuentren en optimas condiciones y con sus etiquetas correspondientes</p>
+                    <p class="pPreguntasFrecuentes pPreguntasFrecuentes1">Las prendas tienen hasta 15 dias habiles para
+                        el cambio siempre y cuando se encuentren en optimas condiciones y con sus etiquetas
+                        correspondientes</p>
                 </div>
                 <div class="pairContainer col-12 col-md-4 mb-4 text-center">
                     <span class="spanPF">¿Que sucede si quiero hacer un cambio y no hay mi talle/stock?</span>
-                    <p class="pPreguntasFrecuentes pPreguntasFrecuentes2">Si tienes que hacer un cambio y no encuentras la prendas que
+                    <p class="pPreguntasFrecuentes pPreguntasFrecuentes2">Si tienes que hacer un cambio y no encuentras
+                        la prendas que
                         buscabas en stock podrás hacer la devolución del producto dentro de los 15 días hábiles.
                         Se te entregará un voucher de compra por el importe abonado con validez por un año para
                         utilizar en tracto.</p>
                 </div>
                 <div class="pairContainer col-12 col-md-4 mb-4 text-center">
                     <span class="spanPF">¿Cuánto demoran los envíos?</span>
-                    <p class="pPreguntasFrecuentes pPreguntasFrecuentes3">Los envíos dentro de montevideo tienen una demora de 24hs
+                    <p class="pPreguntasFrecuentes pPreguntasFrecuentes3">Los envíos dentro de montevideo tienen una
+                        demora de 24hs
                         hábiles luego de la compra.
                         Los envíos al interior tienen una demora de 48-72hs hábiles luego de ser despachada la
                         compra. (Se realizan a través de dac)
@@ -102,21 +123,21 @@
     <footer class="footer">
         <div class="footerContainer">
             <div class="divFooter">
-                <img src="../assets/imagenes/ig.jpeg" class="footerImage" alt="" width="20px">
+                <img src="../assets/imagenes/ig.jpeg" class="footerImage" alt="Instagram" width="20px">
                 <span class="footerSpan">
                     @tracto.uy
                 </span>
 
             </div>
             <div class="divFooter">
-                <img src="../assets/imagenes/Email.jpg" class="footerImage" alt="" width="20px">
+                <img src="../assets/imagenes/Email.jpg" class="footerImage" alt="Correo electrónico" width="20px">
                 <span class="footerSpan">
                     tracto.uy@gmail.com
                 </span>
 
             </div>
             <div class="divFooter">
-                <img src="./assets/imagenes/adress.jpg" class="footerImage" alt="" width="20px">
+                <img src="./assets/imagenes/adress.jpg" class="footerImage" alt="Dirección" width="20px">
                 <span class="footerSpan">
                     26 de marzo 3213 | Lunes a Viernes 14:30-19:30
                 </span>

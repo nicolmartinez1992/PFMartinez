@@ -48,6 +48,9 @@
                                     text-decoration: none;
                                     color: black;
                                     font-weight: bold;
+                                }
+
+                                .ulCategorias {
 
                                     .submenuList {
                                         list-style: disc;
@@ -65,16 +68,18 @@
                 }
             }
 
-            nav {
+            .navMenuList {
+                height: 60px;
                 .menuList {
-                    margin-left: 55px;
-                    height: 60px;
+                    display: flex;
+                    justify-content: flex-end;
 
                     .divMenuList {
                         display: none;
                     }
 
                     .divRightMenu {
+                        margin-right: 10px;
                         .li1 {
                             .menuItemContacto {
                                 display: none;
@@ -82,6 +87,7 @@
                         }
 
                         .li1 {
+                            height: 60px;
                             .carrito {
                                 width: 45px;
                             }
