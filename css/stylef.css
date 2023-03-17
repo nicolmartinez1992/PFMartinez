@@ -54,7 +54,7 @@
   overflow-y: scroll; }
   .contactMain .formulario form {
     padding-bottom: 30px; }
-    .contactMain .formulario form .contactanos {
+    .contactMain .formulario form .formContainer .contactanos {
       color: black;
       font-family: 'Montserrat', sans-serif;
       font-size: x-large;
@@ -62,22 +62,25 @@
       padding-left: 40px;
       padding-top: 20px;
       padding-bottom: 20px; }
-    .contactMain .formulario form .inputContainer {
+    .contactMain .formulario form .formContainer .inputContainer {
       display: flex;
       flex-direction: row;
       width: 50%;
       padding-left: 20px;
       font-family: 'Montserrat', sans-serif; }
-      .contactMain .formulario form .inputContainer .label {
+      .contactMain .formulario form .formContainer .inputContainer .label {
         display: flex;
         justify-self: flex-start;
         padding-left: 20px;
         padding-right: 20px; }
-      .contactMain .formulario form .inputContainer .input {
-        margin-bottom: 20px; }
-    .contactMain .formulario form .inputContainer .inputEmail {
+      .contactMain .formulario form .formContainer .inputContainer .input {
+        margin-bottom: 20px;
+        border: solid;
+        border-color: black;
+        border-width: 1.2px; }
+    .contactMain .formulario form .formContainer .inputContainer .inputEmail {
       margin-left: 21.02px; }
-    .contactMain .formulario form .inputContainer .inputSend {
+    .contactMain .formulario form .formContainer .inputContainer .inputSend {
       margin-left: 326.23px;
       background-color: black;
       color: white;
@@ -150,7 +153,7 @@
       font-size: x-large; }
   .mainPreguntasFrecuentes .globalPF .textContainer {
     display: flex;
-    padding: 10px 20px 20px 20px;
+    padding: 10px 20px 70px 20px;
     flex-direction: row;
     font-family: 'Montserrat', sans-serif;
     width: 100%;
@@ -341,8 +344,7 @@ body {
     overflow-y: scroll; }
     .mainPreguntasFrecuentes .globalPF .textContainer {
       display: flex;
-      height: 100%;
-      padding-bottom: 20px; }
+      height: 100%; }
       .mainPreguntasFrecuentes .globalPF .textContainer .pairContainer .pPreguntasFrecuentes {
         padding-bottom: 20px; }
       .mainPreguntasFrecuentes .globalPF .textContainer .pairContainer .pPreguntasFrecuentes1 {
@@ -351,43 +353,59 @@ body {
         padding-top: 0px; }
   .contactMain {
     overflow-y: scroll; }
-    .contactMain .formulario form .contactanos {
-      text-align: center;
-      padding-left: 0px;
-      font-size: large; }
-    .contactMain .formulario form .inputContainer {
+    .contactMain .formulario {
       display: flex;
-      flex-direction: row;
-      padding-left: 0px; }
-      .contactMain .formulario form .inputContainer .label {
-        font-size: small; }
-      .contactMain .formulario form .inputContainer .inputName {
-        height: 20px; }
-    .contactMain .formulario form .inputContainer {
-      display: flex;
-      flex-direction: row;
-      padding-left: 0px; }
-      .contactMain .formulario form .inputContainer .label {
-        font-size: small; }
-      .contactMain .formulario form .inputContainer .inputEmail {
-        margin-left: 17.08px;
-        height: 20px; }
-    .contactMain .formulario form .inputContainer {
-      display: flex;
-      flex-direction: row;
-      padding-left: 0px; }
-      .contactMain .formulario form .inputContainer .textArea {
-        height: 150px;
-        max-width: 500px;
-        min-width: 200px; }
-    .contactMain .formulario form .inputContainer {
-      display: flex;
-      flex-direction: row;
-      padding-left: 0px; }
-      .contactMain .formulario form .inputContainer .inputSend {
-        margin-left: 238.45px;
-        font-size: small;
-        margin-bottom: 20px; }
+      justify-content: center; }
+      .contactMain .formulario form .formContainer {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        padding-right: 40px;
+        padding-left: 40px; }
+        .contactMain .formulario form .formContainer .contactanos {
+          text-align: center;
+          padding-left: 0px;
+          font-size: large; }
+        .contactMain .formulario form .formContainer .inputContainer {
+          display: flex;
+          flex-direction: column;
+          padding-left: 0px; }
+          .contactMain .formulario form .formContainer .inputContainer .label {
+            font-size: small;
+            padding-left: 0px; }
+          .contactMain .formulario form .formContainer .inputContainer .inputName {
+            height: 20px; }
+            .contactMain .formulario form .formContainer .inputContainer .inputName::placeholder {
+              color: transparent; }
+        .contactMain .formulario form .formContainer .inputContainer {
+          display: flex;
+          flex-direction: column;
+          padding-left: 0px; }
+          .contactMain .formulario form .formContainer .inputContainer .label {
+            font-size: small;
+            padding-left: 0px; }
+          .contactMain .formulario form .formContainer .inputContainer .input {
+            width: 298.448px; }
+          .contactMain .formulario form .formContainer .inputContainer .inputEmail {
+            margin-left: 0px;
+            height: 20px; }
+        .contactMain .formulario form .formContainer .inputContainer {
+          display: flex;
+          flex-direction: column;
+          padding-left: 0px; }
+          .contactMain .formulario form .formContainer .inputContainer .textArea {
+            height: 150px;
+            max-width: 500px;
+            min-width: 200px; }
+        .contactMain .formulario form .formContainer .inputContainer {
+          display: flex;
+          flex-direction: column;
+          padding-left: 0px; }
+          .contactMain .formulario form .formContainer .inputContainer .inputSend {
+            margin-left: 238.45px;
+            font-size: small;
+            margin-bottom: 20px;
+            width: 60px; }
   .mainShopnow .h2Productos {
     font-size: large; }
   .mainShopnow .globalContainer .imagesContainer .individualContainer .imgProductos {

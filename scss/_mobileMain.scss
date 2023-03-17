@@ -1,22 +1,26 @@
 @media (max-width:768px) {
-.indexMain{
-    .divboton{
-        width: 100px;
-        .shopNow{
-            font-size: small;
+    .indexMain {
+        .divboton {
+            width: 100px;
+
+            .shopNow {
+                font-size: small;
+            }
         }
-    }
-    .globalDiv{
-        .globalCarousel{
-            width: 200px;
-            margin-top: 150px;
-            .carouselContainer{
-                .carousel{
-                    .carouselExample{
-                        .carousel-inner{
-                            .carousel-item{
-                                .productImage{
-                                    width: 150px;
+
+        .globalDiv {
+            .globalCarousel {
+                width: 200px;
+                margin-top: 150px;
+
+                .carouselContainer {
+                    .carousel {
+                        .carouselExample {
+                            .carousel-inner {
+                                .carousel-item {
+                                    .productImage {
+                                        width: 150px;
+                                    }
                                 }
                             }
                         }
@@ -25,105 +29,141 @@
             }
         }
     }
-}
 
-.mainPreguntasFrecuentes{
-    overflow-y: scroll;
-    .globalPF{
-        .textContainer{
+    .mainPreguntasFrecuentes {
+        overflow-y: scroll;
+
+        .globalPF {
+            .textContainer {
+                display: flex;
+                height: 100%;
+
+                .pairContainer {
+                    .pPreguntasFrecuentes {
+                        padding-bottom: 20px;
+                    }
+
+                    .pPreguntasFrecuentes1 {
+                        padding-top: 0px;
+                    }
+                }
+
+                .pairContainer {
+                    .pPreguntasFrecuentes3 {
+                        padding-top: 0px;
+                    }
+
+                }
+            }
+        }
+    }
+
+    .contactMain {
+        overflow-y: scroll;
+
+        .formulario {
             display: flex;
-            height: 100%;
-            padding-bottom: 20px;
-            .pairContainer{
-                .pPreguntasFrecuentes{
-                    padding-bottom: 20px;
-                }
-                .pPreguntasFrecuentes1{
-                    padding-top: 0px;
-                }
-            }
-            .pairContainer{
-                .pPreguntasFrecuentes3{
-                    padding-top: 0px;
-                }
+            justify-content: center;
 
-            }
-        }
-    }
-}
+            form {
+                .formContainer {
+                    display: flex;
+                    justify-content: center;
+                    flex-direction: column;
+                    padding-right: 40px;
+                    padding-left: 40px;
+                    .contactanos {
+                        text-align: center;
+                        padding-left: 0px;
+                        font-size: large;
+                    }
 
-.contactMain{
-    overflow-y: scroll;
-    .formulario{
-        form{
-            .contactanos{
-                text-align: center;
-                padding-left: 0px;
-                font-size: large;
-            }
-            .inputContainer{
-                display: flex;
-                flex-direction: row;
-                padding-left: 0px;
-                .label{
-                    font-size: small;
-                }
-                .inputName{
-                    height: 20px;
-                }
-            }
-            .inputContainer{
-                display: flex;
-                flex-direction: row;
-                padding-left: 0px;
-                .label{
-                    font-size: small;
-                }
-                .inputEmail{
-                    margin-left: 17.08px;
-                    height: 20px;
-                }
-            }
-            .inputContainer{
-                display: flex;
-                flex-direction: row;
-                padding-left: 0px;
-                .textArea{
-                    height: 150px;
-                    max-width: 500px;
-                    min-width: 200px;
-                }
-            }
-            .inputContainer{
-                display: flex;
-                flex-direction: row;
-                padding-left: 0px;
-                .inputSend{
-                    margin-left: 238.45px;
-                    font-size: small;
-                    margin-bottom: 20px;
-                }
-            }
-        }
-    }
-}
+                    .inputContainer {
+                        display: flex;
+                        flex-direction: column;
+                        padding-left: 0px;
 
-.mainShopnow{
-    .h2Productos{
-        font-size: large;
-    }
-    .globalContainer{
-        .imagesContainer{
-            .individualContainer{
-                .imgProductos{
-                    width: 150px;
-                    height: 150px;
-                }
-                .spanProductos{
-                    font-size: small;
+                        .label {
+                            font-size: small;
+                            padding-left: 0px;
+                        }
+
+                        .inputName {
+                            height: 20px;
+
+                            &::placeholder {
+                                color: transparent;
+                            }
+                        }
+                    }
+
+                    .inputContainer {
+                        display: flex;
+                        flex-direction: column;
+                        padding-left: 0px;
+
+                        .label {
+                            font-size: small;
+                            padding-left: 0px;
+                        }
+
+                        .input{
+                            width: 298.448px;
+                        }
+
+                        .inputEmail {
+                            margin-left: 0px;
+                            height: 20px;
+                        }
+                    }
+
+                    .inputContainer {
+                        display: flex;
+                        flex-direction: column;
+                        padding-left: 0px;
+
+                        .textArea {
+                            height: 150px;
+                            max-width: 500px;
+                            min-width: 200px;
+                        }
+                    }
+
+                    .inputContainer {
+                        display: flex;
+                        flex-direction: column;
+                        padding-left: 0px;
+
+                        .inputSend {
+                            margin-left: 238.45px;
+                            font-size: small;
+                            margin-bottom: 20px;
+                            width: 60px;
+                        }
+                    }
                 }
             }
         }
     }
-}
+
+    .mainShopnow {
+        .h2Productos {
+            font-size: large;
+        }
+
+        .globalContainer {
+            .imagesContainer {
+                .individualContainer {
+                    .imgProductos {
+                        width: 150px;
+                        height: 150px;
+                    }
+
+                    .spanProductos {
+                        font-size: small;
+                    }
+                }
+            }
+        }
+    }
 }
