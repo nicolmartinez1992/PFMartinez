@@ -45,15 +45,16 @@ function validarFormulario(e) {
         error.innerHTML = "<p id='error'>Dejo algun campo vacío</p>"
         const enviarComponente = document.getElementById('enviar')
         enviarComponente.append(error)
+      } else {
+        return null
       }
+} else {
+    console.log(usuario)
+    localStorage.setItem("usuario", JSON.stringify(usuario))
+    reset = document.getElementById("form").reset();
 }
 }
 
-
-//     console.log(usuario)
-//     localStorage.setItem("usuario", JSON.stringify(usuario))
-//     reset = document.getElementById("form").reset();
-// }
 
     // console.log(componenteError)
     // if (!componenteError) {
