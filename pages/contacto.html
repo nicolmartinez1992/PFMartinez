@@ -72,43 +72,52 @@
                     <li class="li1 liPrincipalMenu">
                         <a class="menuItem" href="./preguntasFrecuentes.html">PREGUNTAS FRECUENTES</a>
                     </li>
-                </div>
-                <div class="divRightMenu">
-                    <li class="li1 li2">
-                        <a class="menuItemContacto" href="../pages/contacto.html"><img
-                                src="../assets/imagenes/contacto.jpg" width="40px">
-                        </a>
-                    </li>
-                    <li class="li1 li2">
-                        <a href="Aca va link del carrito"><img src="../assets/imagenes/bolsa.png" width="55px"></a>
-                    </li>
-                </div>
+                    <div class="searchContainer">
+                        <div class="input-group mb-3 search">
+                            <input type="text" class="form-control" placeholder="" aria-label="Recipient's username"
+                                aria-describedby="basic-addon2">
+                            <div class="input-group-append searchButtonContainer">
+                                <button class="btn btn-outline-secondary searchButton" type="button">Buscar</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="divRightMenu">
+                        <li class="li1 li2">
+                            <a class="menuItemContacto" href="../pages/contacto.html"><img
+                                    src="../assets/imagenes/contacto.jpg" width="40px">
+                            </a>
+                        </li>
+                        <li class="li1 li2">
+                            <a href="Aca va link del carrito"><img src="../assets/imagenes/bolsa.png" width="55px"></a>
+                        </li>
+                    </div>
             </ul>
         </nav>
     </header>
 
     <main class="contactMain">
         <section class="formulario">
-            <form action="Formulario de contacto">
+            <form id="form">
                 <div class="formContainer">
-                <legend class="contactanos">CONTACTANOS</legend>
-                <div class="inputContainer">
-                    <span class="label" for="name">Nombre</span>
-                    <input class="inputName input" type="text" placeholder="Escribe tu nombre">
-                </div>
-                <div class="inputContainer">
-                    <label class="label" for="Email">Email</label>
-                    <input class="inputEmail input" type="email" name="" id="">
-                </div>
-                <div class="inputContainer">
-                    <label class="label" for="message">Mensaje</label>
-                    <textarea class="textArea input" name="message" id="" cols="30" rows="10"></textarea>
-                </div>
-                <div class="inputContainer">
-                    <input class="inputSend" type="button" value="Enviar">
-                </div>
+                    <legend class="contactanos">CONTACTANOS</legend>
+                    <div class="inputContainer">
+                        <span class="label" for="name">Nombre</span>
+                        <input class="inputName input" type="text" placeholder="Escribe tu nombre" id="name">
+                    </div>
+                    <div class="inputContainer">
+                        <label class="label" for="Email">Email</label>
+                        <input class="inputEmail input" type="email" name="" id="email">
+                    </div>
+                    <div class="inputContainer">
+                        <label class="label" for="message">Mensaje</label>
+                        <textarea class="textArea input" name="message" id="message" cols="30" rows="10"></textarea>
+                    </div>
+                    <div class="inputContainer" id="enviar">
+                        <button class="send" type="submit">Enviar</button>
+                        <!-- <input class="inputSend" type="button" value="Enviar"> -->
+                    </div>
             </form>
-        </div>
+            </div>
         </section>
         <img class="wpp wppContacto" src="../assets/imagenes/wpp.png" alt="Whatsapp" width="100px">
     </main>
@@ -141,6 +150,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
         crossorigin="anonymous"></script>
+    <script src="../js/contacto.js"></script>
 </body>
 
 </html>

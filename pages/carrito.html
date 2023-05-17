@@ -10,12 +10,16 @@
         integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/stylef.css">
     <title>Tractof</title>
+    <meta
+        name="Maneja tu estilo desde la comodidad de tu casa. Pedi tus elegidos por la web de manera rápida y sencilla.">
+    <meta name="Indumentaria, compras, moda">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;500&display=swap" rel="stylesheet">
-    <link rel="icon" href="../assets/imagenes/favicon.ico">
+    <link rel="icon" href="./assets/imagenes/favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 </head>
 
-<body>
-    <header>
+<body background="./assets/imagenes/background.jpeg">
+    <header class="header">
         <div class="divimg">
             <img class="img" src="../assets/imagenes/logo-tracto.png" width="150px" alt="Logo">
         </div>
@@ -30,7 +34,7 @@
                 <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="../index.html">Inicio</a>
+                            <a class="nav-link" aria-current="page" href="./index.html">Inicio</a>
                         </li>
                         <li class="sub-menu">
                             <a class="categorias">Categorías<div class="fa fa-caret-down right"></div>
@@ -51,10 +55,10 @@
                     <a class="nav-link" href="#">Categorias</a>
                   </li> -->
                         <li class="nav-item">
-                            <a class="nav-link" href="./preguntasFrecuentes.html">Preguntas Frecuentes</a>
+                            <a class="nav-link" href="./pages/preguntasFrecuentes.html">Preguntas Frecuentes</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="./contacto.html">Contacto</a>
+                            <a class="nav-link" href="./pages/contacto.html">Contacto</a>
                         </li>
                     </ul>
                 </div>
@@ -64,16 +68,16 @@
             <ul class="menuList">
                 <div class="divMenuList">
                     <li class="li1 liPrincipalMenu">
-                        <a class="menuItem" href="../index.html">INICIO</a>
+                        <a class="menuItem" href="./index.html">INICIO</a>
                     </li>
                     <li class="li1 liPrincipalMenu">
                         <a class="menuItem" href="Aca va el sitio de Categorias">CATEGORÍAS</a>
                     </li>
                     <li class="li1 liPrincipalMenu">
-                        <a class="menuItem" href="./preguntasFrecuentes.html">PREGUNTAS FRECUENTES</a>
+                        <a class="menuItem" href="./pages/preguntasFrecuentes.html">PREGUNTAS FRECUENTES</a>
                     </li>
-                    <div class="searchContainer">
-                        <div class="input-group mb-3 search">
+                    <div class="searchContainer" id="searchContainer">
+                        <div class="input-group mb-3 search" id="search">
                             <input type="text" class="form-control" placeholder="" aria-label="Recipient's username"
                                 aria-describedby="basic-addon2">
                             <div class="input-group-append searchButtonContainer">
@@ -81,51 +85,54 @@
                             </div>
                         </div>
                     </div>
-                    <div class="divRightMenu">
-                        <li class="li1 li2">
-                            <a class="menuItemContacto" href="./contacto.html"><img
-                                    src="../assets/imagenes/contacto.jpg" width="40px">
-                            </a>
-                        </li>
-                        <li class="li1 li2">
-                            <a href="Aca va link del carrito"><img src="../assets/imagenes/bolsa.png" width="55px"> </a>
-                        </li>
-                    </div>
+                </div>
+                <div class="divRightMenu">
+                    <li class="li1 li2">
+                        <a class="menuItemContacto" href="./pages/contacto.html"><img
+                                src="../assets/imagenes/contacto.jpg" width="40px">
+                        </a>
+                    </li>
+                    <li class="li1 li2">
+                        <a href="Aca va link del carrito"><img src="../assets/imagenes/bolsa.png" class="carrito"
+                                width="55px"></a>
+                    </li>
+                </div>
             </ul>
         </nav>
     </header>
+    <main>
+       <h2 id="tituloCarrito">Tu carrito</h2>
+       <div id="contenedorCarrito">
+        <!-- <p id="carritoVacio">Tu carrito esta vacio</p> -->
+        <div id="carritoProductos">
+        <div class="carritoProducto">
+            <img id="imagenProducto" src="../assets/imagenes/Productos/body-naranja.jpeg" alt="">
+            <div>
+            <span id="nombre">Nombre</span>
+            <span id="nombreProducto">Body naranja</span>
+        </div>
+        <div id="cantidad">
+        <span>Cantidad</span>
+        <p id="valorCantidad">1</p>
+        </div id="precio">
+        <span id="valorPrecio">$1490</span>
+        </div>
+        <div id="subtotalCarrito">
+            <span>Subtotal</span>
+            <p>$1490</p>
+        </div>
+        <button id="eliminarProducto">Eliminar</button>
+    </div>
+    <div id="carritoAcciones">
+        <div id="vaciarCarrito">
+            <button id="accionVaciar">Vaciar carrito</button>
+        </div>
+        <div id="Pagar">
+            <span id="precioTotal">Total: $1000</span>
+            <button id="pagar">Pagar</button>
+        </div>
 
-    <main class="mainPreguntasFrecuentes">
-        <div class="globalPF">
-            <div class="titleContainer">
-                <span class="preguntasFrecuentes">PREGUNTAS FRECUENTES</span>
-            </div>
-            <div class="textContainer textContainer1 row">
-                <div class="pairContainer col-12 col-md-4 mb-4 text-center">
-                    <span class="spanPF">¿Las prendas tienen cambio?</span>
-                    <p class="pPreguntasFrecuentes pPreguntasFrecuentes1">Las prendas tienen hasta 15 días hábiles para
-                        el cambio siempre y cuando se encuentren en óptimas condiciones y con sus etiquetas
-                        correspondientes</p>
-                </div>
-                <div class="pairContainer col-12 col-md-4 mb-4 text-center">
-                    <span class="spanPF">¿Qué sucede si quiero hacer un cambio y no hay mi talle/stock?</span>
-                    <p class="pPreguntasFrecuentes pPreguntasFrecuentes2">Si tienes que hacer un cambio y no encuentras
-                        la prendas que
-                        buscabas en stock podrás hacer la devolución del producto dentro de los 15 días hábiles.
-                        Se te entregará un voucher de compra por el importe abonado con validez por un año para
-                        utilizar en tracto.</p>
-                </div>
-                <div class="pairContainer col-12 col-md-4 mb-4 text-center">
-                    <span class="spanPF">¿Cuánto demoran los envíos?</span>
-                    <p class="pPreguntasFrecuentes pPreguntasFrecuentes3">Los envíos dentro de Montevideo tienen una
-                        demora de 24hs
-                        hábiles luego de la compra.
-                        Los envíos al interior tienen una demora de 48-72hs hábiles luego de ser despachada la
-                        compra. (Se realizan a través de dac)
-                        *los envíos se realizan de miércoles a sábados</p>
-                </div>
-            </div>
-            <img class="wpp" src="../assets/imagenes/wpp.png" alt="Whatsapp" width="100px">
+    </div>
     </main>
 
     <footer class="footer">
@@ -152,11 +159,5 @@
             </div>
         </div>
     </footer>
-    <!-- Bootstrap -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
-        crossorigin="anonymous"></script>
-        <script src="../js/index.js"></script>
+    <script src="../js/carrito.js"></script>
 </body>
-
-</html>

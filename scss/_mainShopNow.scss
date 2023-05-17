@@ -44,6 +44,25 @@
 
                 .spanProductos {
                     font-family: 'Montserrat', sans-serif;
+                    font-weight: bold;
+                }
+                .precio {
+                    font-family: 'Montserrat', sans-serif;
+                    font-size: small;
+                }
+                .addContainer{
+                    width: 206px;
+                    justify-content: center;
+                    padding-top: 5px;
+                    .add{
+                        font-family: 'Montserrat', sans-serif;
+                        font-size: small;
+                        width: 150px;
+                        background-color: black;
+                        color: white;
+                        border-color: black;
+                        border: none;
+                    }
                 }
             }
         }

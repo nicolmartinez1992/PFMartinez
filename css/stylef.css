@@ -80,7 +80,7 @@
         border-width: 1.2px; }
     .contactMain .formulario form .formContainer .inputContainer .inputEmail {
       margin-left: 21.02px; }
-    .contactMain .formulario form .formContainer .inputContainer .inputSend {
+    .contactMain .formulario form .formContainer .inputContainer .send {
       margin-left: 326.23px;
       background-color: black;
       color: white;
@@ -130,7 +130,23 @@
           .mainShopnow .globalContainer .imagesContainer .individualContainer .imgProductos:hover {
             transform: scale(1.03); }
         .mainShopnow .globalContainer .imagesContainer .individualContainer .spanProductos {
-          font-family: 'Montserrat', sans-serif; }
+          font-family: 'Montserrat', sans-serif;
+          font-weight: bold; }
+        .mainShopnow .globalContainer .imagesContainer .individualContainer .precio {
+          font-family: 'Montserrat', sans-serif;
+          font-size: small; }
+        .mainShopnow .globalContainer .imagesContainer .individualContainer .addContainer {
+          width: 206px;
+          justify-content: center;
+          padding-top: 5px; }
+          .mainShopnow .globalContainer .imagesContainer .individualContainer .addContainer .add {
+            font-family: 'Montserrat', sans-serif;
+            font-size: small;
+            width: 150px;
+            background-color: black;
+            color: white;
+            border-color: black;
+            border: none; }
   .mainShopnow .wpp {
     position: fixed;
     padding: 20px;
@@ -172,6 +188,24 @@
   bottom: 65px;
   right: 0px;
   width: 100px; }
+
+#tituloCarrito {
+  font-size: xx-large;
+  font-family: 'Montserrat', sans-serif;
+  align-items: center;
+  padding-top: 20px; }
+
+#contenedorCarrito {
+  display: flex;
+  flex-direction: row; }
+
+.carritoProducto {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; }
+
+#imagenProducto {
+  width: 75px; }
 
 * {
   margin: 0;
@@ -224,6 +258,20 @@ body {
                 color: black;
                 padding: 8px;
                 border-radius: 1px; }
+          body header .navMenuList .menuList .divMenuList .searchContainer {
+            height: 76px;
+            display: flex;
+            align-items: center;
+            padding-top: 15px;
+            font-family: 'Montserrat', sans-serif; }
+            body header .navMenuList .menuList .divMenuList .searchContainer .search {
+              width: 300px; }
+              body header .navMenuList .menuList .divMenuList .searchContainer .search .searchButtonContainer .searchButton {
+                color: white;
+                font-size: medium;
+                height: 37.333px;
+                border-top-left-radius: 0%;
+                border-bottom-left-radius: 0%; }
         body header .navMenuList .menuList .divRightMenu {
           display: flex;
           flex-direction: row;
@@ -401,7 +449,7 @@ body {
           display: flex;
           flex-direction: column;
           padding-left: 0px; }
-          .contactMain .formulario form .formContainer .inputContainer .inputSend {
+          .contactMain .formulario form .formContainer .inputContainer .send {
             margin-left: 238.45px;
             font-size: small;
             margin-bottom: 20px;

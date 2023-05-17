@@ -1,0 +1,21 @@
+#tituloCarrito {
+    font-size: xx-large;
+    font-family: 'Montserrat', sans-serif;
+    align-items: center;
+    padding-top: 20px;
+}
+
+#contenedorCarrito {
+    display: flex;
+    flex-direction: row;
+}
+
+.carritoProducto {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#imagenProducto {
+    width: 75px;
+}
